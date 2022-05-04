@@ -1,0 +1,140 @@
+.videos {
+    background-color: #f9f9f9;
+    width: 100%;
+    height: 100%;
+    padding: 15px 15px;
+    border-top: 1px solid #ddd;
+}
+
+.videos__container {
+    /* display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap; */
+}
+
+.video {
+    /* width: 310px; */
+    margin-bottom: 30px;
+}
+
+.video__thumbnail {
+    width: 100%;
+    height: 170px;
+    position: relative;
+}
+
+.video__thumbnail :hover {
+    -ms-transform: scale(0.8);
+    /* IE 9 */
+    -webkit-transform: scale(0.8);
+    /* Safari 3-8 */
+    transform: scale(0.8);
+}
+
+.video__thumbnail img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.author img {
+    object-fit: cover;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+}
+
+.video__details {
+    display: flex;
+    margin-top: 10px;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+}
+
+.title h3 {
+    color: rgb(3, 3, 3);
+    line-height: 18px;
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+.title a,
+span {
+    text-decoration: none;
+    color: rgb(96, 96, 96);
+    font-size: 14px;
+}
+
+h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: rgb(3, 3, 3);
+}
+
+@media (max-width: 425px) {
+    .header__search {
+        display: none;
+    }
+    .header__icons .material-icons {
+        display: none;
+    }
+    .header__icons .display-this {
+        display: inline;
+    }
+    .sidebar {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .header__search {
+        display: none;
+    }
+    .sidebar {
+        width: 100%;
+        display: none;
+    }
+    .show-sidebar {
+        display: inline;
+        position: fixed;
+        top: 4.4rem;
+        height: auto;
+    }
+    .navbar__left__hamburger {
+        display: block;
+    }
+}
+
+@media (max-width: 941px) {
+    .header__search input {
+        width: 300px;
+    }
+}
+
+.video_time {
+    position: absolute;
+    z-index: 22;
+    color: #ddd;
+    background-color: black;
+    bottom: 0;
+    right: 0;
+    margin: 4px;
+    padding: 3px 4px;
+    /* height: 12px; */
+    border-radius: 2px;
+}
+
+@media only screen and (min-device-width: 792px) and (max-device-width: 1380px) {
+    .sidebar {
+        display: flex;
+        width: 100%;
+    }
+    .mainContent {
+        width: 100%;
+    }
+}

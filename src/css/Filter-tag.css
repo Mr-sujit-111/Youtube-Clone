@@ -1,0 +1,23 @@
+:root {
+    --dark: #333;
+    --highlight: #f66;
+    --light: #f6f6f6;
+}
+
+.scroll-toggle {
+    align-items: center;
+    display: flex;
+    /* max-width: 680px; */
+    justify-content: center;
+    width: 100%;
+}
+
+.scroll-toggle__list {
+    display: flex;
+    flex: 1 1 auto;
+    overflow-x: hidden;
+}
+
+.scroll-toggle__list-item {
+    flex: 0 0 auto;
+}

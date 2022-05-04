@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    transition: all 1s;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.align-items {
+    align-items: center;
+}
+
+.navbar {
+    background-color: white;
+    padding: 12px 10px;
+}
+
+.w100 {
+    width: 100%;
+}
+
+.navbar__left {
+    display: flex;
+    align-items: center;
+    /*   background: blue; */
+    flex: 1;
+}
+
+.navbar__left__hamburger {
+    color: white;
+    font-size: 1.3em;
+}
+
+.navbar__left__logo {
+    margin-left: 2rem;
+    width: 90px;
+}
+
+.navbar__center {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    flex: 6;
+}
+
+.navbar__center__arrow {
+    color: black;
+    font-size: 1.25rem;
+    align-self: center;
+    margin-right: 1.5rem;
+    display: none;
+}
+
+.navbar__center__input {
+    background: #ffffff;
+    width: 70%;
+    max-width: 600px;
+    border: 1px solid black;
+    padding: 6px;
+    margin: 0;
+    outline: none;
+    color: black;
+    font-size: 1em;
+}
+
+.navbar__center__input::placeholder {
+    color: black;
+    padding-left: 0.2em;
+}
+
+.navbar__center__input:focus {
+    border: 1px solid #2da0ff;
+}
+
+.navbar__center__search-btn {
+    padding: 6px 30px;
+    max-width: 10%;
+    font-size: 1em;
+    background: white;
+    color: white;
+    border: none;
+    margin: 0;
+    max-width: 20%;
+}
+
+.navbar__right {
+    flex: 1.1;
+    display: flex;
+}
+
+.navbar__right__icon {
+    color: #ffffff;
+    font-size: 1.25rem;
+}
+
+.navbar__right__icon+.navbar__right__icon {
+    margin-left: 1.5rem;
+}
+
+.fa-search.navbar__right__icon {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .fa-search.navbar__right__icon {
+        display: inline;
+    }
+    .navbar__center {
+        display: none;
+    }
+}
+
+i.fa {
+    color: #202020;
+}
+
+@media only screen and (max-width: 768px) {
+    i.navbar__left__hamburger {
+        display: block;
+    }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    i.navbar__left__hamburger {
+        display: block;
+    }
+}
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1224px) {
+    i.navbar__left__hamburger {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1224px) {
+    i.navbar__left__hamburger {
+        display: none;
+    }
+}

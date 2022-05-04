@@ -1,0 +1,39 @@
+.MuiButtonBase-root MuiButton-root MuiButton-contained {
+    border-radius: 20px;
+}
+
+.buttonbar {
+    text-decoration: none;
+    color: black;
+    align-items: center;
+    background-color: #f1f3f4;
+    border-radius: 100px;
+    box-sizing: border-box;
+    display: flex;
+    max-height: none;
+    min-height: 37px;
+    position: relative;
+    margin-top: 4px;
+    padding-left: 32px;
+    padding-right: -55px;
+    text-transform: capitalize;
+    margin-left: 20px;
+}
+
+.category .active {
+    background-color: #2c2d23;
+}
+
+.active>.MuiButton-label {
+    color: white;
+}
+
+
+/* .MuiButton-contained .active>span {
+    color: red;
+} */
+
+.scroll-toggle {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
