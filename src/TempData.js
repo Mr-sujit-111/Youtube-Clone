@@ -1,12 +1,13 @@
 const thumbImages = ['song1.jpg', 'song2.jpg', 'movie1.jpg', 'movie2.jpg', 'movie3.jpg', 'movie4.jpg', 'movie5.jpg', 'movie6.jpg', 'movie7.jpg', 'movie8.jpg', 'movie9.jpg', 'movie10.jpg'];
 const categories = ['Music', 'Movie', 'Trailer', 'Comedy', 'Series', 'Cartoon', 'Horror'];
+const rastaurantName = []
 
 let datasets = [];
 const recordCount = 500;
 for (let i = 0; i < recordCount; i++) {
     let item = {};
     item["id"] = i;
-    item["name"] = "Title is " + _random(4) + " " + _random(3);
+    item["rastaurant_name"] = ;
     item["channelName"] = "Channel " + _random(7);
     item["view"] = Math.floor((Math.random() * 10000) + 1) + " views";
     item["uploadTime"] = Math.floor((Math.random() * 10) + 1) + " months ago";

@@ -1,8 +1,6 @@
-const mongoose = require('mongoose');
+const mongoose = require('mongoose';
 
-// const mongod = "mongodb+srv://sujit123:sujitsujit@123@cluster0.wz2me.mongodb.net/YoutubeClone?retryWrites=true&w=majority";
-
-const mongodbUrl = "mongodb+srv://sujit123:P2dApja4tUwGYXbt@cluster0.wz2me.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+const mongodbUrl = 'mongodb url'
 
 const connection = () => {
     const connectionParams = {
